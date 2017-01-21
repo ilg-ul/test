@@ -1,1 +1,4 @@
-# empty
+osx_image: xcode8.2
+
+script:
+  - pwd
