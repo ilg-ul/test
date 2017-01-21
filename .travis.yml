@@ -5,9 +5,11 @@ osx_image: xcode8.2
 
 language:
   - c++
+  - java
   
 script:
   - pwd
   - uname -a
   - clang --version
+  - java -version
   
