@@ -9,5 +9,5 @@ language:
 script:
   - pwd
   - uname -a
-  - clang -version
+  - clang --version
   
