@@ -8,11 +8,13 @@ language:
   - java
   
 script:
-  - set -euo pipefail
+  - set -o errexit 
+  - set -o pipefail 
   - pwd
   - uname -a
   - clang --version
   - java -version
+  - cat /Users/travis/build.sh
   - curl -L "http://artfiles.org/eclipse.org//technology/epp/downloads/release/mars/2/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz" -o ~/Downloads/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
   - tar tf ~/Downloads/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
   - ls -lL
