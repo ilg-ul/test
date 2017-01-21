@@ -3,6 +3,11 @@ os:
   
 osx_image: xcode8.2
 
+language:
+  - c++
+  
 script:
   - pwd
   - uname -a
+  - clang -version
+  
