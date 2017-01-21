@@ -12,4 +12,9 @@ script:
   - uname -a
   - clang --version
   - java -version
+  - curl -L http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/mars/2/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz&mirror_id=274 -o ~/Downloads/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
+  - tar tf ~/Downloads/eclipse-cpp-mars-2-macosx-cocoa-x86_64.tar.gz
+  - ls -lL
+  
+  
   
