@@ -16,6 +16,7 @@ script:
   - env
   - id
   - who am i
+  - whoami
   - #
   - set +o errexit 
   - set +o pipefail
