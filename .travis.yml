@@ -6,19 +6,7 @@ osx_image: xcode8.2
 language: c++
   
 script:
-  - set -o errexit 
-  - set -o pipefail 
-  - pwd
-  - uname -a
-  - clang --version
-  - java -version
-  - # cat /Users/travis/build.sh
-  - env
-  - id
-  - who am i
-  - whoami
-  - #
-  - set +o errexit 
-  - set +o pipefail
+  - bash scripts/travis.osx.sh
+  
   
   
