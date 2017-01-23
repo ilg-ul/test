@@ -21,8 +21,14 @@ IFS=$'\n\t'
 
 pwd
 uname -a
+
 clang --version
+which clang
+gcc --version
+which gcc
 java -version
+which java
+
 # cat /Users/travis/build.sh
 env
 id
@@ -31,15 +37,15 @@ whoami
 who
 
 brew --version
-brew tap homebrew/versions
+#brew tap homebrew/versions
 #brew uninstall gcc
 #brew install gcc5
-brew install gcc6
+#brew install gcc6
 
 gcc-5 --version
 which gcc-5
 
-gcc-6 --version
-which gcc-6
+#gcc-6 --version
+#which gcc-6
 
 exit 0
