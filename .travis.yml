@@ -6,6 +6,7 @@ osx_image: xcode8.2
 language: c++
   
 script:
+  - export DEBUG=1
   - bash scripts/travis.osx.sh
   
   
