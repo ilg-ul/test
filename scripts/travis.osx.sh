@@ -33,11 +33,13 @@ which java
 env
 ls -l /usr/local/bin
 id
-who am i
 whoami
 who
 
 brew --version
+brew cask list
+brew cask uninstall oclint
+
 #brew tap homebrew/versions
 #brew uninstall gcc
 #brew install gcc5
