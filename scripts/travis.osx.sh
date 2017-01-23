@@ -31,7 +31,7 @@ which java
 
 # cat /Users/travis/build.sh
 env
-ls -l /usr/local/bin
+# ls -l /usr/local/bin
 id
 whoami
 who
