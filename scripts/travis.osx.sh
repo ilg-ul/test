@@ -31,6 +31,7 @@ which java
 
 # cat /Users/travis/build.sh
 env
+ls -l /usr/local/bin
 id
 who am i
 whoami
@@ -42,8 +43,8 @@ brew --version
 #brew install gcc5
 #brew install gcc6
 
-gcc-5 --version
-which gcc-5
+#gcc-5 --version
+#which gcc-5
 
 #gcc-6 --version
 #which gcc-6
