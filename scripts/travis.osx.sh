@@ -32,5 +32,7 @@ who
 
 brew --version
 brew tap homebrew/versions
+brew uninstall gcc
 brew install gcc5
+brew install gcc6
 
