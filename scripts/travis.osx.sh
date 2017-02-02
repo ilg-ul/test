@@ -19,35 +19,61 @@ IFS=$'\n\t'
 
 # -----------------------------------------------------------------------------
 
-pwd
-uname -a
+function do_before_install() {
+  echo "before_install started"
 
-clang --version
-which clang
-gcc --version
-which gcc
-java -version
-which java
+  pwd
+  uname -a
 
-# cat /Users/travis/build.sh
-env
-# ls -l /usr/local/bin
-id
-whoami
-who
+  clang --version
+  which clang
+  gcc --version
+  which gcc
+  java -version
+  which java
 
-brew --version
-brew cask list
-brew cask uninstall oclint
+  # cat /Users/travis/build.sh
+  env
+  # ls -l /usr/local/bin
+  id
+  whoami
+  who
 
-brew tap homebrew/versions
+  brew --version
+  brew cask list
+  brew cask uninstall oclint
 
-brew install gcc5
-gcc-5 --version
-which gcc-5
+  brew tap homebrew/versions
 
-brew install gcc6
-gcc-6 --version
-which gcc-6
+  brew install gcc5
+  gcc-5 --version
+  which gcc-5
 
-exit 0
+  brew install gcc6
+  gcc-6 --version
+  which gcc-6
+
+  echo "before_install completed"
+  return 0
+}
+
+function do_before_script() {
+  echo "before_script started"
+
+  echo "before_script completed"
+  return 0
+}
+
+function do_script() {
+  echo "script started"
+
+  echo "script completed"
+  return 0
+}
+
+function do_after_script() {
+  echo "after_script started"
+
+  echo "after_script completed"
+  return 0
+}

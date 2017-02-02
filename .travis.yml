@@ -6,15 +6,16 @@ osx_image: xcode8.2
 language: c++
   
 before_install:
-  - echo "before install"
+  - export DEBUG=1
+  - source scripts/travis.osx.sh
+  - do_before_install
 
 before_script:
-  - echo "before script"
+  - do_before_script
 
 script:
-  - export DEBUG=1
-  - bash scripts/travis.osx.sh
+  - do_script
   
 after_script:
-  - echo "after script"
+  - do_after_script
   
