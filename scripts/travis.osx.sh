@@ -41,7 +41,7 @@ brew cask list
 brew cask uninstall oclint
 
 brew tap homebrew/versions
-#brew uninstall gcc
+
 brew install gcc5
 gcc-5 --version
 which gcc-5

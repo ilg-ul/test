@@ -8,9 +8,6 @@ language: c++
 before_install:
   - echo "before install"
 
-after_install:
-  - echo "after install"
-
 before_script:
   - echo "before script"
 
